@@ -1,0 +1,65 @@
+@import 'artist-detail';
+
+.artist-section {
+    margin:0; padding:0;
+    
+
+    .artist-card{
+        width:100%;
+        border-radius:0;
+        
+        .artist-overlay{
+            position:relative;
+            width:100%;
+            border:1px solid #000;
+            border-radius:10px;
+            overflow:hidden;
+
+            .artist-img{
+                display:block;
+                width:100%;
+                aspect-ratio: 576 / 780;
+                filter:grayscale(100%);
+                transition:all .3s;
+            }
+
+            .artist-title-m{
+                position:absolute;
+                left:0; bottom:0;
+                color:#fff;
+                padding:4.7222vw;
+                font-size:clamp(18px,5vw,50px);
+                font-weight:900;
+                text-transform: uppercase;
+                z-index:999;
+
+                text-shadow:0 0 2px #000;
+            }
+        }
+        
+        .artist-title-w{
+            all: unset;
+            
+            color:#83A667;
+            max-width:80%;
+            width:17.25em;
+            margin:1.6667em auto;
+            padding:1.25em 10vw;
+            border:1px solid #83A667;
+            border-radius:100px;
+            margin-bottom:80px;
+            font-weight:600;
+
+            text-transform: uppercase;
+            box-sizing: border-box;
+            transition:all .3s;
+        }
+
+        &:hover{
+            .artist-img{filter:grayscale(0%);}
+            .artist-title-w{color:white; background-color:#83A667;}
+        }
+
+        .v-card__overlay{background-color: transparent;}
+    }
+}

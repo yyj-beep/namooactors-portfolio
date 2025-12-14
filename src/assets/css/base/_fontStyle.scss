@@ -1,0 +1,60 @@
+/* Body - text */
+
+.date{
+    margin:0; padding:0;
+    font-size: 12px;
+    font-weight:600;
+    color:#999;
+}
+
+.title72{
+    font-size: clamp(36px, 4.8vw, 72px);
+    font-weight: 900;
+    z-index:2;
+}
+.title24{font-size: clamp(16px, 1.6vw, 24px)}
+
+.stitle36-1{font-size: clamp(20px, 2.4vw, 36px)} //오디션 등 일부의 서브 타이틀
+.stitle36-2{font-size: clamp(16px, 2.4vw, 36px)} //공지 타이틀, 브랜드 아이덴티티
+.stitle24{font-size: clamp(18px, 2.4vw, 24px)}
+
+.body20{font-size: clamp(16px, 1.3333vw, 20px)}
+.date20{font-size: clamp(14px, 1.3333vw, 20px)}
+.intro20{font-size:clamp(12px, 1.3333vw, 20px)}
+
+.body16{font-size: clamp(14px, 1.0667vw, 16px)}
+.btn16{font-size: clamp(12px, 1.0667vw, 16px)} 
+.tab16{font-size: clamp(10px, 1.0667vw, 16px)}
+
+.body14{font-size: clamp(12px, 0.9333vw, 14px)}
+
+
+/* Footer */
+.caption14{font-size: clamp(10px, 0.9333vw, 14px)}
+.caption12{font-size: clamp(10px, 0.8vw, 12px)}
+
+
+
+/* =====================
+디자인적 요소
+======================== */
+.f140{
+    font-size:clamp(100px, 7.2917vw, 140px);
+    font-weight:600;
+    color:transparent;
+    -webkit-text-stroke:1px #000;
+    -moz-text-stroke:1px #000;
+}
+
+.f92{
+    font-size:clamp(36px,6.1333vw, 92px);
+    font-weight:700;
+}
+
+.f211{
+    font-size:clamp(48px,14.0667vw, 211px);
+    line-height:clamp(50px,13.3333vw,200px);
+    font-weight:900;
+    text-transform:uppercase;
+    color:#000;
+}

@@ -1,0 +1,190 @@
+/*==================
+ArtistTop.vue
+==================*/
+
+.actors-top{
+    margin:200px auto 0;
+    @media(max-width:960px){margin-top:142px}
+    @media(max-width:600px){margin-top:0px}
+
+
+    .actors-info{
+        
+        gap:clamp(10px, 5.2083vw, 100px);
+        @media (max-width:600px){position:relative}
+
+        .actors-img{
+            display:block;
+            height:auto !important;
+            aspect-ratio: 576 / 780;
+
+            border:1px solid #000;
+            border-radius:10px;
+
+            @media(max-width:600px){
+                width:100vw;
+                border:none;
+                border-radius:0;
+            }
+        }
+    }
+
+
+
+    .actors-profile{all:unset;
+        
+        @media (max-width:600px){
+            position:absolute;
+            bottom:0;left:0;
+            margin-left:23px;
+            margin-bottom:32px;
+            color:white;
+        }
+
+        .actors-title{
+            font-weight:900;
+            text-transform: uppercase;
+        }
+
+        .actors-subtitle{
+            color:#000;
+            margin-top:15px;
+            font-weight:500;
+            gap:25px;
+
+            @media (max-width:600px){
+                margin-top:0;
+                font-weight:400;
+                color:white !important;
+
+            }
+
+            .actors-line{border: 1px solid #000;
+                height:clamp(14px, 1.04vw, 20px);
+            }
+        }
+
+
+
+        .top-line{
+            margin-top:60px;
+            @media (max-width:960px){
+            margin-top:50px;}
+        }
+
+        .actors-list{
+            white-space: nowrap;
+            min-width:60px;
+        }  
+    }
+}
+
+
+
+.actors-col-gap{
+    gap:clamp(5px, 0.7813vw,15px);
+    overflow: visible;
+    display: block;
+    word-break: keep-all;
+}
+
+
+
+
+
+
+
+/*==================
+ArtistTabs.vue
+==================*/
+
+
+.tab-btn-group{
+    margin-top:clamp(15px, 1.1979vw, 23px);
+    @media (max-width:600px){width:40%;}
+    @media (max-width:400px){width:60%;}
+
+    .top-btn{margin-top:auto;
+    @media (max-width:600px){margin-top:5px !important;}
+    }
+}
+
+.actors-tab-content{
+    all: unset;
+
+    .actors-tab-content-outline{
+        border:1px solid #000;
+        aspect-ratio: 576 / 780;
+        border-radius:10px;
+    }
+}
+
+
+
+
+
+
+/*==================
+ArtistFilmography.vue
+==================*/
+.filmo{
+
+    margin-top:120px;
+    @media (max-width:600px){margin-top:60px;}
+
+    .filmo-list{
+        border-top:3px solid #000;
+        border-bottom:2px solid #000;
+        width:443px;
+        margin-top:clamp(0px, 3.1250vw, 60px);
+
+        @media(max-width:600px){
+            width:100%;
+            margin-top:0;
+        }
+
+        .filmo-tap-title{
+            border-top:1px solid #d9d9d9;
+            padding:20px 12px;
+        }
+
+
+        .filmo-content-wrapper{
+            gap:clamp(5px, 0.7813vw,15px);
+            padding-left:clamp(20px, 2.2917vw, 44px);
+            padding-right:clamp(20px, 2.2917vw, 44px);
+            margin-bottom:clamp(26px,1.8750vw, 36px);
+            
+
+            .filmo-content-year{
+                gap:clamp(20px, 2.0833vw, 40px);
+                
+                .body16{
+                white-space: nowrap;
+                min-width:30px;}
+            }
+        }
+    }
+
+    
+
+
+    .filmo-slide{
+        border:1px solid #000;
+        border-radius:10px;
+
+        &.v-window,
+        &.v-carousel-item,
+        &.v-img{
+            display:block;
+            margin:0; padding:0;
+            height:auto !important;
+        }
+
+        .slide-img{
+            display:block;
+            // aspect-ratio: 773 / 1104;
+        }
+    }
+    
+}

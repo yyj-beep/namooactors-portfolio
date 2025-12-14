@@ -1,0 +1,43 @@
+.footer{
+  padding-top:45px !important;
+  padding-bottom:30px !important;
+  padding-right:clamp(24px, 4vw, 60px) !important;
+  padding-left:clamp(24px, 4vw, 60px) !important;
+
+  .footer-top{
+    margin-bottom:clamp(16px, 4.4vw, 66px);
+
+    .bottom-logo{
+      width:clamp(95px,14.5833vw,150px);
+      aspect-ratio: 175/55;
+      background:url('@/assets/img/logo.png')no-repeat;
+      background-size:cover;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    nav{
+      text-transform:uppercase;
+      font-weight:600;
+
+      .footer-shop{&:hover{text-decoration:underline;}}
+      .footer-icon{ gap:clamp(8px, 1.3333vw, 20px);
+        .v-btn{color:#999;
+        &:hover{color:#83A667;}}
+      }
+    }
+  }
+
+  .footer-contact{
+    color:#999;
+    p{line-height:2em;}
+  }
+
+  .footer-terms{
+    color:#999;
+    gap:7px;
+    
+    .caption14{font-weight:600 !important; cursor: pointer;}
+    .caption12{font-weight:700 !important;}
+  }    
+}

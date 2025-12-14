@@ -1,0 +1,89 @@
+.header{
+  position:fixed !important;
+  padding-left:30px;
+  height:clamp(60px,6.6667vw,100px);
+  transition: all 0.3s !important;
+  transform: translateY(0) !important;
+  background-color:transparent !important;
+
+
+  @media(max-width:959px){padding-left:0px}
+
+
+  /* 로고 ________________________________________*/
+
+  .top-logo{
+    width:clamp(95px,14.5833vw,150px);
+    aspect-ratio: 175/55;
+    background:url('@/assets/img/logo.png')no-repeat;
+    background-size:cover;
+    will-change: transform;
+    transform: translateZ(0);
+  }
+
+
+  /* 데스크탑 메뉴 ________________________________*/
+
+  .header-menu{
+    gap:clamp(40px, 5vw, 85px);
+    margin-right:clamp(45px, 5.1vw, 90px);
+
+    .menu-btn{
+      --v-btn-hover-overlay-opacity: 0;
+      --v-theme-overlay-multiplier: 0;
+
+      text-transform: uppercase;
+      font-size:clamp(12px, 1vw, 15px);
+      font-weight:800;
+      padding:0;
+
+      &:hover{color: #83A667 !important;}
+    }
+  }
+
+  .active-tab {color: #83A667 !important;}
+
+}
+
+
+
+/* 모바일 메뉴 __________________________________*/
+
+.menu-mobile{
+  z-index:9;
+  width:100vw !important;
+  position:fixed !important;
+  top:0 !important; right: 0 !important;
+  height:100vh !important;
+  box-shadow:none !important;
+
+  .menu-mobile-max{
+    width:100%; height:100%;
+    padding-top:clamp(60px, 40vw, 180px);
+    padding-bottom:104px;
+
+
+    .menu-text{
+      font-size:18px;
+      font-weight:800;
+    }
+
+    .menu-subtext{
+      color:#696969;
+      font-size:12px;
+      font-weight:500;
+    }
+
+    .v-list-item{
+
+      .v-list-item-title{text-transform: uppercase;}
+    }
+    
+    .active-drawer-item .v-list-item-title {
+      color: #83A667 !important;
+    }
+  }
+}
+
+.nav-border {border-bottom: 1px solid black; background-color:white !important;}
+.hide-header {transform: translateY(-100%) !important;}

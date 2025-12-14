@@ -1,0 +1,49 @@
+@import 'history';
+
+
+.intro{
+      background:url('@/assets/img/company/bg.png') repeat;
+      background-size:500px;
+      padding-bottom:clamp(110px,9.8958vw,190px);
+      @media (max-width:959px){padding-bottom:110px;}
+
+      .intro-title{
+
+            .v-img{
+                  width:50.5vw;
+                  margin-top:7.5vw;
+                  margin-left:2.2917vw;
+                  margin-right:4.4271vw;
+
+                  @media(max-width:960px){
+                        width:auto;
+                        margin-top:108px;
+                        margin-left:4.1667vw;
+                        margin-right:5px;
+                  }
+            }   
+      }
+
+
+      .intro-group{
+            margin-top:clamp(0px, 33.3333vw, 100px);
+            padding-left:clamp(0px, 2.0833vw, 40px);
+            padding-right:clamp(0px, 2.0833vw, 40px);
+            gap:clamp(17px, 2vw, 30px);
+
+            .title72{margin-left:33px;
+                  @media (max-width:599px){margin-left:0px;}
+            }
+            
+            .intro-text{
+                  gap: clamp(0px, 3.2813vw, 63px);
+                  @media (max-width:959px){gap:clamp(0px, 6.5625vw, 63px);}
+
+                  .intro-text-content{
+                        gap:clamp(10px,0.8854vw,17px);
+                        word-break: keep-all;
+                        .date20{font-weight:500}
+                  }
+            }
+      }
+}

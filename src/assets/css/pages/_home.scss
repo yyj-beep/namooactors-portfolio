@@ -1,0 +1,217 @@
+/*================
+기업 홍보 영상
+=================*/
+
+.home-video{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+
+  video{
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+    object-fit:cover;
+  }
+}
+
+
+
+/*================
+테마 문구
+=================*/
+.home-theme{
+  color:transparent;
+  -webkit-text-stroke:1px #000;
+  -moz-text-stroke:1px #000;
+}
+
+
+
+/*================
+아티스트 슬라이드
+=================*/
+.home-slide{
+  position:relative;
+  background-color:#2d2d2d;
+
+  .slide-group{
+    width:100%;
+    max-width:100vw;
+
+
+    .slide-content{
+      width:350px;
+      aspect-ratio:.7/1;
+      // border-radius:10px;
+      overflow:hidden;
+      box-shadow:4px 4px 30px #1b1b1b;
+
+      &:first-child{margin-left:clamp(24px,24vw,360px);
+      transition: all .3s;}
+
+      @media(max-width:959px){width:280px;
+      &:first-child{margin-left:clamp(24px,6.6667vw,360px)}}
+
+      
+      .slide-img{
+        width:100%;
+        height:100%;
+      }
+      
+    }
+  }
+
+  .slide-text{
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .slide-text-group{
+      display:flex;
+      animation:scroll-left 20s linear infinite;
+
+      span{
+        font-size:clamp(110px, 14vw, 230px);
+        padding-right:clamp(40px, 6.6667vw, 100px);
+        -webkit-text-stroke:1px #888;
+        -moz-text-stroke:1px #888;
+        text-transform:uppercase;
+        color:transparent;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(0);}
+      100% { transform: translateX(-50%);}
+    }
+  }
+}
+
+
+
+/*================
+아트워크 : 작품
+=================*/
+.work-slide{
+  box-sizing: border-box;
+
+  .work-wrap{
+    position:relative;
+    width:100%;
+    margin-top:clamp(15px, 2.0667vw, 31px);
+    border:8px solid #000;
+    aspect-ratio:16/9;
+    overflow:hidden;
+    box-shadow:4px 4px 20px #ddd;
+    background:#000;
+    &:hover .work-img{opacity:.8;}
+
+    .work-group{
+      position:absolute;
+      top:0; left:0;
+      width:100%;
+    }
+
+    .work-text{
+      all:unset;
+      color:white;
+      position:absolute;
+      bottom:40%; left:0;
+      z-index:999 !important;
+      margin-left:24px;
+      text-shadow: 0 0 4px #999;
+      gap:13px;
+
+      @media(max-width:599px){
+        bottom:0%;
+        margin:0 0 13px 16px;
+      }
+
+      
+      .work-title{
+        gap:clamp(5px, 1.3333vw,20px);
+
+        .h2{font-weight:600;}
+        .div{gap:14px;}
+      }
+      .date{color:white !important;}
+      
+    }
+
+  }
+}
+
+
+
+/*================
+아트워크 : 뉴스
+=================*/
+
+.work-content{
+  @media(max-width:959px){
+    border-top:3px solid #000;
+    border-bottom:2px solid #000;
+  }
+
+  .work-pa-0{
+    @media(max-width:959px){padding:0}
+
+    .content-border{
+      border-top:3px solid #000;
+      border-bottom:2px solid #000;
+      padding-top:clamp(21px, 1.8vw, 27px);
+      padding-bottom:clamp(19px, 1.8vw, 27px);
+        
+      &:hover{background:rgba(0,0,0,.03)}
+
+      @media(max-width:959px){
+        border-top:1px solid #d9d9d9;
+        border-bottom:0;
+      }
+
+
+
+      .content-news{
+        all:unset;
+
+        .content-title{
+          margin-bottom:0.8333em;
+          line-height: 1.2em;
+
+          font-weight:600;
+          display:-webkit-box;
+          -webkit-box-orient:vertical;
+          line-clamp:2;
+          -webkit-line-clamp:2;
+          overflow:hidden;
+          text-overflow:ellipsis;
+        }
+
+
+        .content-main{
+          font-size:14px;
+          margin-bottom:2.1429em;
+          line-height: 1.2em;
+
+          display:-webkit-box;
+          -webkit-box-orient:vertical;
+          line-clamp:2;
+          -webkit-line-clamp:2;
+          overflow:hidden;
+          text-overflow:ellipsis;
+        }
+
+        .content-subtitle{
+          .content-btn{font-size:20px;}
+        }
+      }
+    }
+  }
+}
